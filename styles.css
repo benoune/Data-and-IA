@@ -1,4 +1,52 @@
-/* Définition de la typographie générale */
+/* Couleurs de base inspirées par la charte Air France */
+:root {
+    --air-france-blue: #002157; /* Bleu Air France */
+    --air-france-gray: #5b6770; /* Gris sobre */
+    --air-france-light-gray: #e6e8ea; /* Gris clair pour des effets de contraste */
+    --air-france-red: #e31c3d; /* Rouge pour accents */
+}
+
+/* Style général pour les titres */
+h1, h2, h3, h4, h5 {
+    font-family: 'Arial', sans-serif; /* Police classique et élégante */
+    color: var(--air-france-blue);
+    margin: 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Style spécifique pour chaque niveau de titre */
+h1 {
+    font-size: 1.8em; /* Taille réduite */
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--air-france-light-gray);
+}
+
+h2 {
+    font-size: 1.6em; /* Taille réduite */
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid var(--air-france-light-gray);
+}
+
+h3 {
+    font-size: 1.4em; /* Taille réduite */
+    letter-spacing: 0.6px;
+}
+
+h4 {
+    font-size: 1.2em; /* Taille réduite */
+    letter-spacing: 0.4px;
+    color: var(--air-france-gray);
+}
+
+h5 {
+    font-size: 1em; /* Taille réduite */
+    letter-spacing: 0.2px;
+    color: var(--air-france-gray);
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,10 +80,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 2px;
-	padding-right: 20px;
+    padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 40px;
     background-color: #003366; /* Bleu Air France */
 }
 
@@ -196,4 +244,9 @@ section.contact {
 .email {
     color: #002157.; /* Couleur du texte pour l'email */
     margin: 5px 0 0 0; /* Marge pour l'email */
+}
+
+.grid-container {
+    display: grid;
+    place-items: center; /* Centre l'image horizontalement et verticalement */
 }
