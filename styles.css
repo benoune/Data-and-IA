@@ -250,3 +250,8 @@ section.contact {
     display: grid;
     place-items: center; /* Centre l'image horizontalement et verticalement */
 }
+
+q {
+  font-style: italic;
+  color: #003DA5; /* Bleu d'Air France */
+}
